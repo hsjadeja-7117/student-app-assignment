@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "YOUR_DOCKERHUB_USERNAME/student-app"
+        IMAGE_NAME = "hsjadeja/student-app"
         TAG = "${BUILD_NUMBER}"
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/YOUR_GITHUB_USERNAME/student-app.git'
+             git branch: 'main', url: 'https://github.com/hsjadeja-7117/student-app-assignment.git'
             }
         }
 
